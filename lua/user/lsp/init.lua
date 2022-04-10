@@ -8,3 +8,7 @@ require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
 require "user.lsp.lsp_signature"
 require "user.lsp.diagnostic"
+require "user.lsp.formatting"
+require "code_action_menu"
+
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]

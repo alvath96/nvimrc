@@ -164,15 +164,20 @@ _G.packer_plugins = {
     path = "/Users/alvath96/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-code-action-menu"] = {
+    loaded = true,
+    path = "/Users/alvath96/.local/share/nvim/site/pack/packer/start/nvim-code-action-menu",
+    url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/Users/alvath96/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
-  ["nvim-echo-diagnostics"] = {
+  ["nvim-lightbulb"] = {
     loaded = true,
-    path = "/Users/alvath96/.local/share/nvim/site/pack/packer/start/nvim-echo-diagnostics",
-    url = "https://github.com/seblj/nvim-echo-diagnostics"
+    path = "/Users/alvath96/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

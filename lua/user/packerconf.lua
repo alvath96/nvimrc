@@ -19,7 +19,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost packer.lua source <afile> | PackerSync
+    autocmd BufWritePost packerconf.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -76,7 +76,8 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "arkav/lualine-lsp-progress"  -- show lsp server progress in lualine
   use "ray-x/lsp_signature.nvim" -- function signature
-  use 'seblj/nvim-echo-diagnostics'
+  use "weilbith/nvim-code-action-menu" -- show code actions in menu
+  use "kosayoda/nvim-lightbulb"  -- notify if a line has code actions
 
  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

@@ -48,6 +48,10 @@ keymap("n", "<Leader>q!", ":Bdelete!<CR>", opts)
 keymap("n", "gp", "o<Esc>p", opts) -- next line
 keymap("n", "gP", "O<Esc>p", opts) -- previous line
 
+-- indent
+keymap("n", "<", "<<", opts)
+keymap("n", ">", ">>", opts)
+
 -- Move text up and down
 keymap("n", "J", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "K", "<Esc>:m .-2<CR>==", opts)

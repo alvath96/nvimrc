@@ -38,6 +38,10 @@ function PrintDiagnostics(opts, bufnr, line_nr, client_id)
     if diagnostic_message ~= "" then
       table.insert(diagnostic_tbl, {diagnostic_message, highlight})
     end
+
+    -- only output single error per line to disable "Press ENTER to continue"
+    -- TODO fix this to show multiple errors
+    break
   end
 
   vim.api.nvim_echo(diagnostic_tbl, false, {})
