@@ -10,7 +10,7 @@ vim.g.maplocalleader = ","
 keymap("", "<C-c>", "<Esc>", opts)
 
 -- Telescope
-keymap("", "<C-p>", ":Telescope find_files<CR>", opts)
+keymap("", "<C-p>", ":Telescope find_files hidden=true<CR>", opts)
 keymap("", "<C-f>", ":Telescope live_grep<CR>", opts)
 
 -- NvimTree
@@ -44,6 +44,9 @@ keymap("n", "<C-k>", ":bprevious<CR>", opts)
 keymap("n", "<Leader>q", ":Bdelete<CR>", opts)
 keymap("n", "<Leader>q!", ":Bdelete!<CR>", opts)
 
+-- remap save to gw
+keymap("n", "gw", ":w<CR>", opts)
+
 -- always paste to new line
 keymap("n", "gp", "o<Esc>p", opts) -- next line
 keymap("n", "gP", "O<Esc>p", opts) -- previous line
@@ -59,12 +62,12 @@ keymap("n", "K", "<Esc>:m .-2<CR>==", opts)
 -- yank Y acts like D and C
 keymap("n", "Y", "y$", opts)
 
--- commment stuff
+-- comment stuff
 keymap("n", "<CR>", "gcc", {silent = true})
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -75,7 +78,7 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("v", "K", ":move '<-2<CR>gv-gv", opts)
 
--- commment stuff
+-- comment stuff
 keymap("v", "<CR>", "gcgv", {silent = true})
 
 -- Terminal --
