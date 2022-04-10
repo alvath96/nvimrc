@@ -78,6 +78,7 @@ return packer.startup(function(use)
   use "ray-x/lsp_signature.nvim" -- function signature
   use "weilbith/nvim-code-action-menu" -- show code actions in menu
   use "kosayoda/nvim-lightbulb"  -- notify if a line has code actions
+  use  "wiliamks/nice-reference.nvim"
 
  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

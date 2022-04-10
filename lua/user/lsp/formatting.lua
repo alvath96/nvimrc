@@ -16,14 +16,7 @@ end
 
 function Format()
   vim.api.nvim_command("lua vim.lsp.buf.formatting_sync()")
-  vim.api.nvim_command('lua OrganizeImports()') 
+
+  vim.api.nvim_command('lua OrganizeImports()')
 end
 
--- auto format on save
--- TODO use pure lua
-vim.cmd [[
-  augroup format
-    autocmd! * <buffer>
-    autocmd BufWritePre <buffer> lua Format()
-  augroup end
-]]
