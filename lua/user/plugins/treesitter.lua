@@ -4,9 +4,10 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ensure_installed = { "go", "gomod", "python", "bash", "markdown", "cpp", "cmake", "css", "html", "tsx", "dockerfile"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  -- ensure_installed = "all",
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-  ignore_install = { "" }, -- List of parsers to ignore installing
+  ignore_install = { "phpdoc", "swift" }, -- List of parsers to ignore installing
   autopairs = {
     enable = true,
   },
