@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   use "folke/tokyonight.nvim"     -- color scheme
+  use "joshdick/onedark.vim"      -- color scheme
   use "nvim-lualine/lualine.nvim" -- status line
   use "akinsho/bufferline.nvim"   -- bufferline
   use "kyazdani42/nvim-tree.lua"  -- file explorer
