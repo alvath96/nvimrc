@@ -63,7 +63,7 @@ keymap("n", "K", "<Esc>:m .-2<CR>==", opts)
 keymap("n", "Y", "y$", opts)
 
 -- comment stuff
-keymap("n", "<CR>", "gcc", {silent = true})
+keymap("n", "<CR>", [[&ma ? "gcc" : "<CR>"]], {silent = true, expr = true})
 
 -- Insert --
 -- Press jk fast to enter

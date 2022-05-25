@@ -48,12 +48,12 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
-  use "folke/tokyonight.nvim"     -- color scheme
-  use "joshdick/onedark.vim"      -- color scheme
+  use "folke/tokyonight.nvim" -- color scheme
+  use "joshdick/onedark.vim" -- color scheme
   use "nvim-lualine/lualine.nvim" -- status line
-  use "akinsho/bufferline.nvim"   -- bufferline
-  use "kyazdani42/nvim-tree.lua"  -- file explorer
-  use "moll/vim-bbye"             -- keep window layout when closing buffer
+  use "akinsho/bufferline.nvim" -- bufferline
+  use "kyazdani42/nvim-tree.lua" -- file explorer
+  use "moll/vim-bbye" -- keep window layout when closing buffer
 
   use "numToStr/Comment.nvim" -- comment/uncomment stuff
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
@@ -68,20 +68,22 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "arkav/lualine-lsp-progress"  -- show lsp server progress in lualine
+  use "arkav/lualine-lsp-progress" -- show lsp server progress in lualine
   use "ray-x/lsp_signature.nvim" -- function signature
   use "weilbith/nvim-code-action-menu" -- show code actions in menu
-  use "kosayoda/nvim-lightbulb"  -- notify if a line has code actions
-  use  "wiliamks/nice-reference.nvim"
+  use "kosayoda/nvim-lightbulb" -- notify if a line has code actions
 
- -- cmp plugins
+  use 'RishabhRD/popfix'
+  use 'RishabhRD/nvim-lsputils'
+
+  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -104,4 +106,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-

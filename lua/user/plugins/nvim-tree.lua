@@ -1,6 +1,6 @@
 local list = {
-  { key = ">", action = "cd"}, -- TODO dir down
-  { key = "<", action = "dir_up"},
+  { key = ">", action = "cd" }, -- TODO dir down
+  { key = "<", action = "dir_up" },
   { key = "r", action = "full_rename" },
   { key = "v", action = "vsplit" },
   { key = "s", action = "split" },
@@ -9,7 +9,7 @@ local list = {
   { key = "<C-e>", action = "" }, -- disable, used for NvimTreeToggle
 }
 
-require'nvim-tree'.setup {
+require 'nvim-tree'.setup {
   disable_netrw = true,
   hijack_netrw = true,
   open_on_setup = false,
@@ -42,4 +42,3 @@ require'nvim-tree'.setup {
     tree_width = 30,
   },
 }
-
